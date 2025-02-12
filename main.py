@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 in2024 = datetime(2024, 4, 2)
 in2025 = datetime(2025, 4, 2)
-in2026 = datetime(2026, 4, 2)
+in2026 = datetime(2026, 4, 1)
 today = datetime.today()
 
 sinceInvestment = today - in2024
