@@ -12,7 +12,7 @@ sinceInvestment = today - in2024
 
 notional = 20000
 fixedRate = 0.06
-profitSharingRatio = 0.0
+profitSharingRatio = 0.5
 interestForTheYear = notional * fixedRate
 # AccruedInterest = interestForTheYear * (sinceInvestment.days / (in2025 - in2024).days)
 ticker = "0P00000RGK.L"
@@ -119,7 +119,7 @@ if check_password():
         voo_sharpe_ratio = calculateSharpeRatio(voo_data)
         # Calculate annualized return for VOO
         voo_annualized_return = voo_data['Daily Return'].mean() * 250
-        st.write(f"**S&P Annualized Return:** {voo_annualized_return * 100:.2f}%")
+        # st.write(f"**S&P Annualized Return:** {voo_annualized_return * 100:.2f}%")
         st.write(f"**S&P Sharpe Ratio:** {voo_sharpe_ratio:.2f}")
 
 
